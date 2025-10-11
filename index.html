@@ -1,31 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo Profissional - João Victor</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Roboto', 'serif'], /* Tentativa de uso do Roboto, mas Inter será o default */
-                    },
-                }
-            }
-        }
-
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const button = document.getElementById('menu-button');
-            menu.classList.toggle('menu-open');
-            button.setAttribute('aria-expanded', menu.classList.contains('menu-open'));
-        }
-    </script>
+    <script src="javascript.js"></script>
 </head>
 
 <body class="selection:bg-blue-300 selection:text-gray-900">
@@ -39,7 +22,7 @@
                     <span class="text-2xl font-bold text-primary"></span>
                 </div>
 
-                <!-- Desktop Menu: Hover alterado para verde suave e negrito removido (exceto Portfólio) -->
+                <!-- Desktop Menu -->
                 <nav class="hidden md:flex md:space-x-8">
                     <a href="#sobre"
                         class="text-secondary hover:text-highlight transition duration-150 ease-in-out font-medium">Sobre</a>
@@ -66,7 +49,7 @@
             </div>
         </div>
 
-        <!-- Mobile Menu (Dropdown): Hover alterado para verde suave e negrito removido (exceto Portfólio) -->
+        <!-- Mobile Menu (Dropdown) -->
         <div class="md:hidden bg-white shadow-inner" id="mobile-menu" aria-hidden="true">
             <div class="pt-2 pb-3 space-y-1 px-2 sm:px-3">
                 <a href="#sobre" onclick="toggleMenu()"
@@ -89,8 +72,7 @@
 
         <!-- SEÇÃO 1: SOBRE E CONTATO (PROFILE CARD) -->
         <section id="sobre"
-            class="mb-10 p-6 bg-white shadow-xl rounded-xl border-t-4 border-primary transform hover:scale-[1.01] transition duration-300">
-            <!-- font-extrabold alterado para font-bold (mantido da alteração anterior) -->
+            class="section-anchor mb-10 p-6 bg-white shadow-xl rounded-xl border-t-4 border-primary transform hover:scale-[1.01] transition duration-300">
             <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-2 flex items-center gap-3">
                 <!-- Ícone de Perfil Simples -->
                 <svg class="h-8 w-8 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -133,7 +115,7 @@
         </section>
 
         <!-- SEÇÃO 2: EXPERIÊNCIA PROFISSIONAL (TIMELINE) -->
-        <section id="experiencia" class="mb-10">
+        <section id="experiencia" class="section-anchor mb-10">
             <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 text-primary">
                 <svg class="h-7 w-7 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -190,7 +172,7 @@
         </section>
 
         <!-- SEÇÃO 3: HABILIDADES (GRID) -->
-        <section id="habilidades" class="mb-10">
+        <section id="habilidades" class="section-anchor mb-10">
             <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 text-primary">
                 <svg class="h-7 w-7 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -260,7 +242,7 @@
         </section>
 
         <!-- SEÇÃO 4: FORMAÇÃO E CAPACITAÇÃO -->
-        <section id="formacao" class="mb-10">
+        <section id="formacao" class="section-anchor mb-10">
             <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 text-primary">
                 <svg class="h-7 w-7 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -291,8 +273,8 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 5: INFORMAÇÕES CHAVE E PORTFÓLIO (Treated) -->
-        <section id="portfolio" class="mb-10">
+        <!-- SEÇÃO 5: INFORMAÇÕES CHAVE E PORTFÓLIO -->
+        <section id="portfolio" class="section-anchor mb-10">
             <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 text-primary">
                 <svg class="h-7 w-7 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -303,54 +285,106 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                <!-- Informações Adicionais (Treated Layout) -->
-                <div class="p-5 bg-white rounded-xl shadow-md border-t-2 border-primary">
-                    <h3 class="font-semibold text-lg text-primary mb-3">Detalhes da Oportunidade</h3>
+                <!-- Informações Adicionais (REESTRUTURADO E MELHORADO VISUALMENTE) -->
+                <div class="p-5 bg-white rounded-xl shadow-xl border-t-2 border-primary space-y-4">
+                    <h3 class="font-semibold text-lg text-primary">Detalhes da Oportunidade</h3>
 
-                    <div class="space-y-3">
-                        <!-- Pretensão Salarial -->
-                        <div
-                            class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 bg-gray-50 rounded-lg">
-                            <span class="font-medium text-secondary text-sm">Pretensão Salarial (BRL):</span>
-                            <div class="font-bold text-gray-900 mt-1 sm:mt-0 text-right text-base md:text-lg">R$
-                                2.500,00</div>
-                        </div>
+                    <!-- Pretensão Salarial -->
+                    <div
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 bg-gray-50 rounded-lg shadow-sm">
+                        <span class="font-medium text-secondary text-sm">Pretensão Salarial (BRL):</span>
+                        <div class="font-bold text-gray-900 mt-1 sm:mt-0 text-right text-base md:text-lg">R$
+                            2.500,00</div>
+                    </div>
 
-                        <!-- Modalidade e Regime -->
-                        <div class="grid grid-cols-2 gap-3 text-center">
-                            <span class="p-3 bg-highlight text-white rounded-lg font-medium text-xs sm:text-sm">
-                                Presencial / Híbrido
-                            </span>
-                            <span class="p-3 bg-primary text-white rounded-lg font-medium text-xs sm:text-sm">
-                                Regime: Estágio/Clt
-                            </span>
-                        </div>
+                    <!-- 🚀 Modalidades de Trabalho (Tags visuais e cores customizadas) -->
+                    <div class="pt-2">
+                        <p class="font-medium text-gray-700 text-sm mb-2">Modelos aceitos</p>
+                        <div class="grid grid-cols-3 gap-2 text-center">
 
-                        <!-- Localização e Diversidade -->
-                        <div class="flex justify-between items-center text-sm pt-2 border-t border-gray-100">
-                            <div class="flex items-center text-gray-700 gap-1">
-                                <svg class="h-4 w-4 text-highlight" fill="none" viewBox="0 0 24 24"
+                            <!-- Presencial (Verde Destaque) - CORRIGIDO com ÍCONE e TEXTO -->
+                            <div class="p-2 text-white rounded-lg font-medium text-xs shadow-md flex flex-col items-center justify-center"
+                                style="--color-highlight: #10B981; background-color: var(--color-highlight);">
+                                <svg class="h-5 w-5 mb-1 text-white" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z">
-                                    </path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        d="M3 12l2-2m0 0l7-7 7 7m0 0v10a1 1 0 01-1 1h-3m-6 0h-2m-2 0H5a1 1 0 01-1-1v-4m7 0h2m-7 0h1m2 0h-2" />
                                 </svg>
-                                <span class="text-xs sm:text-sm">Guarulhos, São Paulo</span>
+                                Presencial
                             </div>
+                            <!-- Híbrido (Azul Primário - Manter) -->
                             <div
-                                class="flex items-center text-gray-700 font-medium bg-gray-100 p-1 px-2 rounded-full text-xs">
-                                Pardo (Diversidade)
+                                class="p-2 bg-primary text-white rounded-lg font-medium text-xs shadow-md flex flex-col items-center justify-center">
+                                <svg class="h-5 w-5 mb-1 text-white" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                                Híbrido
                             </div>
+                            <!-- Remoto (Azul Primário) -->
+                            <div
+                                class="p-2 bg-primary text-white rounded-lg font-medium text-xs shadow-md flex flex-col items-center justify-center">
+                                <svg class="h-5 w-5 mb-1 text-white" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.75 17L9 20l-1 1h8l-1-1v-3.75M16 17a1 1 0 001-1V5a1 1 0 00-1-1H8a1 1 0 00-1 1v11a1 1 0 001 1h8z" />
+                                </svg>
+                                Remoto
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 📑 Regime de Contratação (Botões menores e com sombra) -->
+                    <div class="pt-2 border-t border-gray-100">
+                        <p class="font-medium text-gray-700 text-sm mb-2">Regime de Contratação:</p>
+                        <div class="grid grid-cols-2 gap-3 text-center">
+                            <!-- Regime Estágio -->
+                            <span class="p-2 bg-primary text-white rounded-lg font-medium text-sm shadow-md">
+                                Estágio
+                            </span>
+                            <!-- Regime CLT -->
+                            <span class="p-2 bg-primary text-white rounded-lg font-medium text-sm shadow-md">
+                                CLT
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <!-- Localização e Diversidade -->
+                    <div class="flex justify-between items-center text-sm pt-2 border-t border-gray-100">
+                        <div class="flex items-center text-gray-700 gap-1">
+                            <svg class="h-4 w-4 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span class="text-xs sm:text-sm">Guarulhos, São Paulo</span>
+                        </div>
+                        <div
+                            class="flex items-center text-gray-700 font-medium bg-gray-100 p-1 px-2 rounded-full text-xs">
+                            Pardo (Diversidade)
                         </div>
                     </div>
                 </div>
 
-                <!-- Links (Ajustado com novo link e espaçamento) -->
+                <!-- Links -->
                 <div class="space-y-4">
 
-                    <!-- NOVO: Loja No-code (Yampi) - Projeto Prático -->
+                    <!-- NOVO: Biblioteca Java (Spring Boot) - Projeto Prático -->
+                    <a href="https://biblioteca-springboot-thymleaf-postgsql.onrender.com/login" target="_blank"
+                        class="flex items-center gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition duration-150 border border-green-200 shadow-md">
+                        <!-- Code Icon (Representando Projeto de Software) -->
+                        <svg class="h-6 w-6 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                        <span class="font-medium text-gray-800">Biblioteca Java (Spring Boot)</span>
+                    </a>
+
+                    <!-- Loja No-code (Yampi) - Projeto Prático -->
                     <a href="https://brilhoshop3.catalog.yampi.io/" target="_blank"
                         class="flex items-center gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition duration-150 border border-green-200 shadow-md">
                         <!-- Shopping Bag Icon -->

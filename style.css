@@ -1,62 +1,68 @@
-/* Configuração de Cores e Fontes (Requisitos do Usuário) */
-:root {
-    /* Fundo: #F9FAFB (Tailwind gray-50) - aplicado no body */
-    --color-primary: #1D4ED8;
-    /* Azul Escuro */
-    --color-secondary: #6B7280;
-    /* Cinza Maduro */
-    --color-highlight: #10B981;
-    /* Verde Destaque */
-}
+        /* Configuração de Cores e Fontes (Requisitos do Usuário) */
+        :root {
+            /* Fundo: #F9FAFB (Tailwind gray-50) - aplicado no body */
+            --color-primary: #1D4ED8;
+            /* Azul Escuro */
+            --color-secondary: #6B7280;
+            /* Cinza Maduro */
+            --color-highlight: #10B981;
+            /* Verde Destaque */
+        }
 
-body {
-    font-family: 'Inter', sans-serif;
-    /* Usando Inter para consistência e clareza */
-    background-color: #F9FAFB;
-}
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Usando Inter para consistência e clareza */
+            background-color: #F9FAFB;
+        }
 
-/* Classes Customizadas para a Paleta */
-.text-primary {
-    color: var(--color-primary);
-}
+        /* Classes Customizadas para a Paleta */
+        .text-primary {
+            color: var(--color-primary);
+        }
 
-.bg-primary {
-    background-color: var(--color-primary);
-}
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
 
-.text-highlight {
-    color: var(--color-highlight);
-}
+        .text-highlight {
+            color: var(--color-highlight);
+        }
 
-.border-highlight {
-    border-color: var(--color-highlight);
-}
+        .border-highlight {
+            border-color: var(--color-highlight);
+        }
 
-.text-secondary {
-    color: var(--color-secondary);
-}
+        .text-secondary {
+            color: var(--color-secondary);
+        }
 
-/* Estilo da Linha do Tempo (Experiência) */
-.timeline-item {
-    border-left: 3px solid var(--color-highlight);
-    padding-left: 1.5rem;
-}
+        /* Estilo da Linha do Tempo (Experiência) */
+        .timeline-item {
+            border-left: 3px solid var(--color-highlight);
+            padding-left: 1.5rem;
+        }
 
-/* Sticky Header */
-.sticky-header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-}
+        /* Sticky Header */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
 
-/* Menu de Navegação */
-#mobile-menu {
-    transition: max-height 0.3s ease-out;
-    overflow: hidden;
-    max-height: 0;
-}
+        /* NOVO: Ajusta o posicionamento da rolagem para que o header fixo não cubra o título da seção. */
+        .section-anchor {
+            scroll-margin-top: 4rem;
+            /* Deve ser igual ou ligeiramente maior que a altura do header (h-16 = 64px = 4rem) */
+        }
 
-.menu-open {
-    max-height: 500px !important;
-    /* Valor alto para garantir abertura */
-}
+        /* Menu de Navegação */
+        #mobile-menu {
+            transition: max-height 0.3s ease-out;
+            overflow: hidden;
+            max-height: 0;
+        }
+
+        .menu-open {
+            max-height: 500px !important;
+            /* Valor alto para garantir abertura */
+        }
