@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo Profissional - João Victor</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
+        
+
 </head>
 
 <body class="selection:bg-blue-300 selection:text-gray-900">
 
-    <!-- HEADER FIXO COM NAVEGAÇÃO -->
-    <header class="sticky-header bg-white shadow-lg border-b border-gray-100">
+    <!-- HEADER FIXO COM NAVEGAÇÃO --><header class="sticky-header bg-white shadow-lg border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Nome/Título -->
-                <div class="flex-shrink-0">
+                <!-- Nome/Título (MODIFICADO: Dragão Simples SVG) --><div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Novo SVG de Perfil de Dragão Mais Reconhecível --><svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 13L15 13L15 11L9 11L9 13Z" fill="var(--color-primary)"/>
+                        <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM12 4C14.7614 4 17 6.23858 17 9H7C7 6.23858 9.23858 4 12 4ZM19 12C19 14.7614 16.7614 17 14 17H10C7.23858 17 5 14.7614 5 12V9H19V12Z" fill="var(--color-highlight)"/>
+                    </svg>
                     <span class="text-2xl font-bold text-primary"></span>
                 </div>
 
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex md:space-x-8">
+                <!-- Desktop Menu --><nav class="hidden md:flex md:space-x-8">
                     <a href="#sobre"
                         class="text-secondary hover:text-highlight transition duration-150 ease-in-out font-medium">Sobre</a>
                     <a href="#experiencia"
@@ -36,12 +38,10 @@
                         class="text-highlight hover:text-green-700 hover:scale-105 transition duration-150 ease-in-out font-semibold">Portfólio</a>
                 </nav>
 
-                <!-- Mobile Menu Button -->
-                <button id="menu-button" type="button" onclick="toggleMenu()"
+                <!-- Mobile Menu Button --><button id="menu-button" type="button" onclick="toggleMenu()"
                     class="md:hidden p-2 rounded-md text-secondary hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                     aria-controls="mobile-menu" aria-expanded="false">
-                    <!-- Icone Hamburger (Menu) -->
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <!-- Icone Hamburger (Menu) --><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
@@ -49,8 +49,7 @@
             </div>
         </div>
 
-        <!-- Mobile Menu (Dropdown) -->
-        <div class="md:hidden bg-white shadow-inner" id="mobile-menu" aria-hidden="true">
+        <!-- Mobile Menu (Dropdown) --><div class="md:hidden bg-white shadow-inner" id="mobile-menu" aria-hidden="true">
             <div class="pt-2 pb-3 space-y-1 px-2 sm:px-3">
                 <a href="#sobre" onclick="toggleMenu()"
                     class="block px-3 py-2 rounded-md text-base font-medium text-secondary hover:text-highlight hover:bg-gray-50">Sobre</a>
@@ -67,34 +66,41 @@
     </header>
 
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+    <!-- CONTEÚDO PRINCIPAL --><main class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
 
-        <!-- SEÇÃO 1: SOBRE E CONTATO (PROFILE CARD) -->
-        <section id="sobre"
+        <!-- SEÇÃO 1: SOBRE E CONTATO (PROFILE CARD) --><section id="sobre"
             class="section-anchor mb-10 p-6 bg-white shadow-xl rounded-xl border-t-4 border-primary transform hover:scale-[1.01] transition duration-300">
-            <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-2 flex items-center gap-3">
-                <!-- Ícone de Perfil Simples -->
-                <svg class="h-8 w-8 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                </svg>
-                JOÃO VICTOR
-            </h2>
-            <p class="text-xl font-light text-secondary mb-4"> Foco em Engenharia de Software (Java) | Em busca
-                de Estágio</p>
+            
+            <!-- CONTÊINER FLEX PARA ALINHAR TÍTULO E BOTÃO DISCRETO --><div class="flex justify-between items-start">
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-2 flex items-center gap-3">
+                    <!-- Ícone de Perfil Simples --><svg class="h-8 w-8 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                    JOÃO VICTOR
+                </h2>
+                
+                <!-- LINK DISCRETO KODEO AQUI (Novo posicionamento, alinhado à direita) --><a href="https://www.kodeo.site/" target="_blank"
+                    class="inline-flex items-center gap-1 text-xs font-semibold text-highlight hover:text-green-700 transition duration-150 p-1 rounded-md hover:bg-green-50/50 mt-1 sm:mt-2">
+                    <!-- Ícone de Estrela (Simbólico) --><svg class="h-3 w-3 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.516 8.281-7.449-3.715-7.449 3.715 1.516-8.281-6.064-5.828 8.332-1.151z"/>
+                    </svg>
+                    Ver Consultoria KODEO
+                </a>
+            </div>
+            
+            <p class="text-xl font-light text-secondary mb-4"> Foco em Engenharia de Software (Java) </p>
 
             <p class="text-gray-700 leading-relaxed mb-6 text-justify">
                 Estudante do 8º semestre de Ciência da Computação (UNG) focado em Desenvolvimento Back-end e Mobile.
                 Profissional proativo e analítico, com menos de 1 ano de experiência em desenvolvimento. Possuo domínio
                 em Java, com especialização em frameworks como Spring Boot e persistência de dados
-                (JPA/PostgreSQL/PostgreSQL). Minha bagagem em TI e Gestão de Tráfego aprimora minha visão estratégica e
+                (JPA/PostgreSQL). Minha bagagem em TI, Gestão de Tráfego e visão empreendedora (Consultoria de Projetos) aprimora minha visão estratégica e
                 capacidade de construir soluções de software robustas e com foco em resultados.
             </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                <!-- Contato -->
-                <div class="flex items-center gap-2">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm mt-4">
+                <!-- Contato --><div class="flex items-center gap-2">
                     <svg class="h-5 w-5 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
@@ -114,8 +120,7 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 2: EXPERIÊNCIA PROFISSIONAL (TIMELINE) -->
-        <section id="experiencia" class="section-anchor mb-10">
+        <!-- SEÇÃO 2: EXPERIÊNCIA PROFISSIONAL (TIMELINE) --><section id="experiencia" class="section-anchor mb-10">
             <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 text-primary">
                 <svg class="h-7 w-7 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -127,8 +132,7 @@
 
             <div class="space-y-8">
 
-                <!-- Aprendiz Infraestrutura - TI (Atual) -->
-                <article
+                <!-- Aprendiz Infraestrutura - TI (Atual) --><article
                     class="timeline-item bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <h3 class="font-bold text-xl text-gray-900">Aprendiz Infraestrutura - TI</h3>
                     <p class="text-secondary text-sm mb-2">Instituição Casa De David | Janeiro/2024 - Outubro/2025</p>
@@ -141,8 +145,7 @@
                     </ul>
                 </article>
 
-                <!-- Estagiário em Marketing Digital - Gestor de Tráfego -->
-                <article
+                <!-- Estagiário em Marketing Digital - Gestor de Tráfego --><article
                     class="timeline-item bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <h3 class="font-bold text-xl text-gray-900">Estagiário em Marketing Digital (Gestor de Tráfego)</h3>
                     <p class="text-secondary text-sm mb-2">Geek Point - Comércio E Varejo | Janeiro/2024 - Maio/2024</p>
@@ -155,8 +158,7 @@
                     </ul>
                 </article>
 
-                <!-- Criador de loja virtual - Dropshipping (Freelancer) -->
-                <article
+                <!-- Criador de loja virtual - Dropshipping (Freelancer) --><article
                     class="timeline-item bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <h3 class="font-bold text-xl text-gray-900">Criador de Loja Virtual - Dropshipping</h3>
                     <p class="text-secondary text-sm mb-2">Ldo - Loja De Dropshipping Oficial (Freelancer) | Julho/2023
@@ -171,8 +173,7 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 3: HABILIDADES (GRID) -->
-        <section id="habilidades" class="section-anchor mb-10">
+        <!-- SEÇÃO 3: HABILIDADES (GRID) --><section id="habilidades" class="section-anchor mb-10">
             <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 text-primary">
                 <svg class="h-7 w-7 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -180,12 +181,11 @@
                     </path>
                 </svg>
                 Habilidades Técnicas e Profissionais
-            </h2>
+            </h2 >
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
-                <!-- Card: Desenvolvimento Mobile/Back-end (Foco Principal) -->
-                <div class="p-5 bg-white rounded-xl shadow-md border-t-2 border-primary">
+                <!-- Card: Desenvolvimento Mobile/Back-end (Foco Principal) --><div class="p-5 bg-white rounded-xl shadow-md border-t-2 border-primary">
                     <h3 class="font-semibold text-lg text-primary mb-2">Desenvolvimento Mobile & Back-end</h3>
                     <div class="flex flex-wrap gap-2 text-xs">
                         <span class="px-3 py-1 bg-blue-100 text-primary rounded-full font-medium">Java
@@ -204,13 +204,13 @@
                     </div>
                 </div>
 
-                <!-- Card: Front-end & Outras (Treated) -->
-                <div class="p-5 bg-white rounded-xl shadow-md border-t-2 border-highlight">
+                <!-- Card: Front-end & Outras (Treated) --><div class="p-5 bg-white rounded-xl shadow-md border-t-2 border-highlight">
                     <h3 class="font-semibold text-lg text-highlight mb-2">Front-end e Habilidades Cruzadas</h3>
                     <div class="flex flex-wrap gap-2 text-xs">
                         <span class="px-3 py-1 bg-green-100 text-highlight rounded-full font-medium">HTML/CSS</span>
                         <span class="px-3 py-1 bg-green-100 text-highlight rounded-full font-medium">JavaScript
                             (Básico)</span>
+                        <!-- Adicionado React (Básico) --><span class="px-3 py-1 bg-green-100 text-highlight rounded-full font-medium">React (Básico)</span>
                         <span class="px-3 py-1 bg-green-100 text-highlight rounded-full font-medium">Bootstrap</span>
                         <span class="px-3 py-1 bg-green-100 text-highlight rounded-full font-medium">Thymeleaf</span>
                         <span class="px-3 py-1 bg-green-100 text-highlight rounded-full font-medium">Java Swing</span>
@@ -222,8 +222,7 @@
                     </div>
                 </div>
 
-                <!-- Card: TI, Suporte e Idiomas (Treated) -->
-                <div class="p-5 bg-white rounded-xl shadow-md border-t-2 border-primary">
+                <!-- Card: TI, Suporte e Idiomas (Treated) --><div class="p-5 bg-white rounded-xl shadow-md border-t-2 border-primary">
                     <h3 class="font-semibold text-lg text-primary mb-2">TI e Idiomas</h3>
                     <div class="flex flex-wrap gap-2 text-xs">
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full font-medium">Manutenção de
@@ -241,8 +240,7 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 4: FORMAÇÃO E CAPACITAÇÃO -->
-        <section id="formacao" class="section-anchor mb-10">
+        <!-- SEÇÃO 4: FORMAÇÃO E CAPACITAÇÃO --><section id="formacao" class="section-anchor mb-10">
             <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 text-primary">
                 <svg class="h-7 w-7 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -273,8 +271,7 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 5: INFORMAÇÕES CHAVE E PORTFÓLIO -->
-        <section id="portfolio" class="section-anchor mb-10">
+        <!-- SEÇÃO 5: INFORMAÇÕES CHAVE E PORTFÓLIO --><section id="portfolio" class="section-anchor mb-10">
             <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 text-primary">
                 <svg class="h-7 w-7 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -285,25 +282,21 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                <!-- Informações Adicionais (REESTRUTURADO E MELHORADO VISUALMENTE) -->
-                <div class="p-5 bg-white rounded-xl shadow-xl border-t-2 border-primary space-y-4">
+                <!-- Informações Adicionais (REESTRUTURADO E MELHORADO VISUALMENTE) --><div class="p-5 bg-white rounded-xl shadow-xl border-t-2 border-primary space-y-4">
                     <h3 class="font-semibold text-lg text-primary">Detalhes da Oportunidade</h3>
 
-                    <!-- Pretensão Salarial -->
-                    <div
+                    <!-- Pretensão Salarial --><div
                         class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 bg-gray-50 rounded-lg shadow-sm">
                         <span class="font-medium text-secondary text-sm">Pretensão Salarial (BRL):</span>
                         <div class="font-bold text-gray-900 mt-1 sm:mt-0 text-right text-base md:text-lg">R$
                             2.500,00</div>
                     </div>
 
-                    <!-- 🚀 Modalidades de Trabalho (Tags visuais e cores customizadas) -->
-                    <div class="pt-2">
+                    <!-- 🚀 Modalidades de Trabalho (Tags visuais e cores customizadas) --><div class="pt-2">
                         <p class="font-medium text-gray-700 text-sm mb-2">Modelos aceitos</p>
                         <div class="grid grid-cols-3 gap-2 text-center">
 
-                            <!-- Presencial (Verde Destaque) - CORRIGIDO com ÍCONE e TEXTO -->
-                            <div class="p-2 text-white rounded-lg font-medium text-xs shadow-md flex flex-col items-center justify-center"
+                            <!-- Presencial (Verde Destaque) - CORRIGIDO com ÍCONE e TEXTO --><div class="p-2 text-white rounded-lg font-medium text-xs shadow-md flex flex-col items-center justify-center"
                                 style="--color-highlight: #10B981; background-color: var(--color-highlight);">
                                 <svg class="h-5 w-5 mb-1 text-white" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -312,8 +305,7 @@
                                 </svg>
                                 Presencial
                             </div>
-                            <!-- Híbrido (Azul Primário - Manter) -->
-                            <div
+                            <!-- Híbrido (Azul Primário - Manter) --><div
                                 class="p-2 bg-primary text-white rounded-lg font-medium text-xs shadow-md flex flex-col items-center justify-center">
                                 <svg class="h-5 w-5 mb-1 text-white" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -322,8 +314,7 @@
                                 </svg>
                                 Híbrido
                             </div>
-                            <!-- Remoto (Azul Primário) -->
-                            <div
+                            <!-- Remoto (Azul Primário) --><div
                                 class="p-2 bg-primary text-white rounded-lg font-medium text-xs shadow-md flex flex-col items-center justify-center">
                                 <svg class="h-5 w-5 mb-1 text-white" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -335,24 +326,20 @@
                         </div>
                     </div>
 
-                    <!-- 📑 Regime de Contratação (Botões menores e com sombra) -->
-                    <div class="pt-2 border-t border-gray-100">
+                    <!-- 📑 Regime de Contratação (Botões menores e com sombra) --><div class="pt-2 border-t border-gray-100">
                         <p class="font-medium text-gray-700 text-sm mb-2">Regime de Contratação:</p>
                         <div class="grid grid-cols-2 gap-3 text-center">
-                            <!-- Regime Estágio -->
-                            <span class="p-2 bg-primary text-white rounded-lg font-medium text-sm shadow-md">
+                            <!-- Regime Estágio --><span class="p-2 bg-primary text-white rounded-lg font-medium text-sm shadow-md">
                                 Estágio
                             </span>
-                            <!-- Regime CLT -->
-                            <span class="p-2 bg-primary text-white rounded-lg font-medium text-sm shadow-md">
+                            <!-- Regime CLT --><span class="p-2 bg-primary text-white rounded-lg font-medium text-sm shadow-md">
                                 CLT
                             </span>
                         </div>
                     </div>
 
 
-                    <!-- Localização e Diversidade -->
-                    <div class="flex justify-between items-center text-sm pt-2 border-t border-gray-100">
+                    <!-- Localização e Diversidade --><div class="flex justify-between items-center text-sm pt-2 border-t border-gray-100">
                         <div class="flex items-center text-gray-700 gap-1">
                             <svg class="h-4 w-4 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -370,33 +357,36 @@
                     </div>
                 </div>
 
-                <!-- Links -->
-                <div class="space-y-4">
+                <!-- Links --><div class="space-y-4">
 
-                    <!-- NOVO: Biblioteca Java (Spring Boot) - Projeto Prático -->
-                    <a href="https://biblioteca-springboot-thymleaf-postgsql.onrender.com/login" target="_blank"
+                    <!-- BOTÃO DE DESTAQUE KODEO AQUI (Redimensionado) --><a href="https://www.kodeo.site/" target="_blank"
+                        class="flex items-center gap-3 p-3 bg-primary text-white rounded-xl hover:bg-blue-600 transition duration-150 border border-blue-800 shadow-xl transform hover:scale-[1.01] font-bold">
+                        <!-- Icone de Foguete/Start-up para dar mais impacto visual (Redimensionado) --><svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <span class="text-base">KODEO - Consultoria & Projetos</span>
+                    </a>
+                    
+                    <!-- Biblioteca Java (Spring Boot) - Projeto Prático --><a href="https://biblioteca-springboot-thymleaf-postgsql.onrender.com/login" target="_blank"
                         class="flex items-center gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition duration-150 border border-green-200 shadow-md">
-                        <!-- Code Icon (Representando Projeto de Software) -->
-                        <svg class="h-6 w-6 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Code Icon (Representando Projeto de Software) --><svg class="h-6 w-6 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                         </svg>
                         <span class="font-medium text-gray-800">Biblioteca Java (Spring Boot)</span>
                     </a>
 
-                    <!-- Loja No-code (Yampi) - Projeto Prático -->
-                    <a href="https://brilhoshop3.catalog.yampi.io/" target="_blank"
+                    <!-- Loja No-code (Yampi) - Projeto Prático --><a href="https://brilhoshop3.catalog.yampi.io/" target="_blank"
                         class="flex items-center gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition duration-150 border border-green-200 shadow-md">
-                        <!-- Shopping Bag Icon -->
-                        <svg class="h-6 w-6 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Shopping Bag Icon --><svg class="h-6 w-6 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                         </svg>
                         <span class="font-medium text-gray-800">Projeto Loja Virtual (Yampi)</span>
                     </a>
-
-                    <!-- Portfólio Geral (Webnode) - Ícone de Planeta/Web -->
-                    <a href="https://joao-victor8.webnode.page/meu-trabalho/" target="_blank"
+                    
+                    <!-- NOVO: Portfólio Geral (Webnode) - Restaurado --><a href="https://joao-victor8.webnode.page/meu-trabalho/" target="_blank"
                         class="flex items-center gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition duration-150 border border-green-200 shadow-md">
                         <svg class="h-6 w-6 text-highlight" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -406,8 +396,7 @@
                         <span class="font-medium text-gray-800">Portfólio Geral (UX/UI)</span>
                     </a>
 
-                    <!-- GitHub (Repositórios) -->
-                    <a href="https://github.com/jonnyzera" target="_blank"
+                    <!-- GitHub (Repositórios) --><a href="https://github.com/jonnyzera" target="_blank"
                         class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-150 border border-gray-200 shadow-md">
                         <svg class="h-6 w-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
@@ -415,10 +404,9 @@
                                 clip-rule="evenodd" />
                         </svg>
                         <span class="font-medium text-gray-800">GitHub (Repositórios)</span>
-                    </a>
+                    </a >
 
-                    <!-- LinkedIn (Perfil Completo) -->
-                    <a href="https://www.linkedin.com/in/dosvictorjob" target="_blank"
+                    <!-- LinkedIn (Perfil Completo) --><a href="https://www.linkedin.com/in/dosvictorjob" target="_blank"
                         class="flex items-center gap-3 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition duration-150 border border-blue-200 shadow-md">
                         <svg class="h-6 w-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
                             <path
@@ -432,8 +420,7 @@
 
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-gray-800 text-white mt-10 p-6 sm:p-8">
+    <!-- FOOTER --><footer class="bg-gray-800 text-white mt-10 p-6 sm:p-8">
         <div class="max-w-4xl mx-auto text-center">
             <p class="text-sm">Direitos de Privacidade | João Victor</p>
         </div>

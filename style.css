@@ -1,5 +1,4 @@
-        /* Configuração de Cores e Fontes (Requisitos do Usuário) */
-        :root {
+:root {
             /* Fundo: #F9FAFB (Tailwind gray-50) - aplicado no body */
             --color-primary: #1D4ED8;
             /* Azul Escuro */
@@ -49,7 +48,7 @@
             z-index: 50;
         }
 
-        /* NOVO: Ajusta o posicionamento da rolagem para que o header fixo não cubra o título da seção. */
+        /* Ajusta o posicionamento da rolagem para que o header fixo não cubra o título da seção. */
         .section-anchor {
             scroll-margin-top: 4rem;
             /* Deve ser igual ou ligeiramente maior que a altura do header (h-16 = 64px = 4rem) */
